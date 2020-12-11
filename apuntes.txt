@@ -1,0 +1,38 @@
+
+reglas de css
+
+1) selectores (La forma de identificar algún elemento en html)
+
+* selector de etiqueta (header - section - article - etc)
+* selector descendente (selector de elementos hijos) 
+* selector de clase (class)
+* selector de ID (id)
+
+
+2) declaraciones
+
+Hace referencia a todo lo que se hace con ese selector (todo lo dentro de las llaves)
+
+3) propiedades
+
+Funciones particulares que podemos hacer con esos elementos
+
+4) valores
+
+Cosas que esperan recibir como variables  las propiedades para funcionar
+
+Ejemplo
+
+header {
+	background: pink;
+}
+
+* selector => header
+
+* declaración => {
+	background: pink;
+}
+
+* propiedad => background
+
+* valor => pink

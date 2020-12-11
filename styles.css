@@ -1,0 +1,292 @@
+/*
+	Selector padre
+	flex-wrap: hace que los elementos caigan hacia abajo
+	flex-shrink: Evita que los elementos se encojan
+	justify-content: Alinea elementos en el eje X
+	Align-items: Alinea elementos en el eje Y
+	flex-direction: posiciona los elementos como filas o columnas
+
+	Selector hijo
+	align-self: Alinea el elemento hijo en el eje Y
+*/
+
+body {
+	font-family: 'Heebo', sans-serif;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Inter', sans-serif;
+	font-weight: normal;
+	/*font-style: italic;*/
+}
+
+h1 {
+	color: white;
+	font-size: 30px;
+	line-height: 1.5; /*!  Separación entre lineas de texto */
+	letter-spacing: -.2; /*!  Separación entre las letras */
+	/*text-transform: uppercase; /*! Podemos dar uppercase, lowercase, etc */
+	margin: 0;
+}
+
+h1 strong {
+	color: #db6400;
+}
+
+h2 {
+	color: #db6400;
+	text-transform: uppercase;
+	font-family: 'Heebo', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+figure {
+	margin: 0;
+}
+
+.header {
+	background-color: #1b2127;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+}
+
+.header a {
+	color: white;
+	text-decoration: none;
+	height: inherit; /* .header a hereda de .header ol li */
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.header ol { /* .header ol hereda de .menu */
+	display: flex;
+	height: inherit;
+}
+
+.header ol li { /* .header ol li hereda de .header ol */
+  height: inherit;
+}
+
+.logo img {
+	height: 70px;
+	width: 80px;
+}
+
+.menu { /* .menu hereda de .header */
+	height: inherit;
+}
+
+.hero {
+	height: 300px;
+	/*background-image: url('https://i.imgur.com/E74Wabo.jpg');*/
+	background-color: #1b2127;
+	/* background-size: 500px 300px; Ancho y Alto*/
+	/*background-repeat: no-repeat; Evita que la imagen se duplique cuando tiene todo el espacio*/
+	/*background-position-x: right;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.hero__img {
+	height: 300px;
+}
+
+.portfolio {
+	background-color: #fafafa;
+	padding: 20px;
+}
+
+.project {
+	/*border-width: 15px;*/
+	/*border-style: solid;*/
+	/*border-color: red;*/
+	/*Resumido es esto*/
+	background-color: white;
+	border: 1px solid gray; /* tamaño tipo estilo */
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+	padding: 20px;
+
+}
+
+.project strong {
+	font-family: 'Inter', sans-serif;
+}
+
+.project__details {
+	height: 200px;
+	width: 500px;
+}
+
+.project__title {
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.project__course, 
+.project__date,
+.project__URL {
+	margin: 10px 0;
+}
+
+.project__description {
+	font-size: 20px;
+}
+
+.project-imageContainer {
+	width: 500px;
+}
+
+.footer {
+	background-color: #1d2127;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer img {
+	vertical-align: middle;
+}
+
+.footer a {
+	color: white;
+}
+
+.experience {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.event__list-title {
+	margin-left: 20px;
+}
+
+.event {
+	background-color: #f4fbff;
+	border-radius: 10px;
+	flex-shrink: 0;
+	margin: 10px;
+	width: 480px;
+	overflow: hidden; /* Evita que la imagen se desborde de su contenedor*/
+}
+
+.event img {
+	width: 480px;
+	height: 200px;
+	/*object-fit: cover; Hace que la imagen se vaya recortando hacia el centro */
+}
+
+.event__details {
+	background-color: white;
+	margin: 20px 40px;
+	margin-top: -40px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+}
+
+.event__description {
+	text-align: left;
+}
+
+.event__url {
+	border: 1px solid #056fff;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: #056fff;
+	border-radius: 5px;
+}
+
+.contact {
+	background-color: #056fff;
+	color: white;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 20px;
+
+}
+
+.social__link {
+	display: inline-block; /*Las etiquetas anchor por defecto son inline*/
+	height: 50px;
+	width: 50px;
+	background-size: 50px 50px;
+	margin: 0 10px;
+}
+
+.form__email input {
+	border-color: gray;
+	border-radius: 5px;
+	border-style: solid;
+	padding: 10px 20px 10px 27px;
+	background-image: url('https://i.imgur.com/G3ebagX.png');
+	background-size: 18px 18px;
+	background-repeat: no-repeat;
+	background-position-x: 5px;
+	background-position-y: center;
+}
+
+.form__email button {
+	display: block;
+	margin-top: 10px;
+	background: transparent;
+	color: white;
+	padding: 5px 0;
+	border-radius: 5px;
+	width: 100px;
+	margin: 10px auto 0;
+	border: 1px solid white;
+}
+
+.form__email h3 {
+	font-family: 'Heebo', sans-serif;
+ }
+
+.social__link.facebook {
+	background-image: url('https://i.imgur.com/VFZxTbL.png');
+}
+
+.social__link.instagram {
+	background-image: url('https://i.imgur.com/q9qwB1D.png');
+}
+
+.social__link.github {
+	background-image: url('https://i.imgur.com/muM0y0D.png');
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
+	height: inherit;
+	flex-wrap: inherit;
+}
