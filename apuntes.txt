@@ -5,6 +5,8 @@ em: unidad relativa al tamaño de fuente especificada más cercano
 rem: unidad relativa al tamaño de fuente especificada en el ancestro más lejano (html o body)
 vw / vh: unidad relativa porcentual con respecto al viewport
 
+----------------------------------------------------------------------------------------------------------
+
 CSS Positions
 
 static: es la propiedad por defecto.
@@ -15,5 +17,17 @@ absolute: el objeto se ubica de manera absoluta con el elemento más cercano que
 fixed: El elemento se muestra de manera fija en el viewport.
 sticky: El elemento se queda de manera fija una vez que aparece en pantalla.
 
+----------------------------------------------------------------------------------------------------------
 
+Para calcular la proporción de un vídeo que trae valores en la etiqueta iframe:
+height * 100 / width
 
+----------------------------------------------------------------------------------------------------------
+
+La etiqueta i, pone la letra en cursiva
+
+----------------------------------------------------------------------------------------------------------
+
+La etiqueta i tambien puede ser ocupada para los iconos
+
+----------------------------------------------------------------------------------------------------------
