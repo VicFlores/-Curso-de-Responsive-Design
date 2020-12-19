@@ -1,4 +1,4 @@
-Unidades relativas de medida:
+1) Unidades relativas de medida:
 
 Porcentaje: longitud referente al tamaño de los elementos padre
 em: unidad relativa al tamaño de fuente especificada más cercano
@@ -7,7 +7,7 @@ vw / vh: unidad relativa porcentual con respecto al viewport
 
 ----------------------------------------------------------------------------------------------------------
 
-CSS Positions
+2) CSS Positions
 
 static: es la propiedad por defecto.
 Con las otras opciones, se activan las propiedades de top, bottom, left, right y z-index.
@@ -19,15 +19,23 @@ sticky: El elemento se queda de manera fija una vez que aparece en pantalla.
 
 ----------------------------------------------------------------------------------------------------------
 
-Para calcular la proporción de un vídeo que trae valores en la etiqueta iframe:
+3) Para calcular la proporción de un vídeo que trae valores en la etiqueta iframe:
 height * 100 / width
 
 ----------------------------------------------------------------------------------------------------------
 
-La etiqueta i, pone la letra en cursiva
+4) La etiqueta i, pone la letra en cursiva
 
 ----------------------------------------------------------------------------------------------------------
 
-La etiqueta i tambien puede ser ocupada para los iconos
+5) La etiqueta i también puede ser ocupada para los iconos
+
+----------------------------------------------------------------------------------------------------------
+
+6) Servidor para paginas estáticas y poderlas ver desde el mobile u otro lado
+
+npm -g install static-server
+
+para encenderlo, escribir static-server dentro de la carpeta del proyecto
 
 ----------------------------------------------------------------------------------------------------------

@@ -251,6 +251,7 @@ figure {
 	overflow: hidden;
 	margin: 0 10px;
 	color: white;
+	text-decoration: none;
 }
 
 .form__email input {
@@ -335,7 +336,16 @@ figure {
 /* desktop first empieza por el MQ mas grande */
 
 /* Pc */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
+
+	.event__list-title {
+		margin-left: 0;
+	}
+
+	.portfolio {
+		padding: 0;
+	}
+
 	.wrapper {
 		padding: 0 1em;
 	}
@@ -365,8 +375,15 @@ figure {
 
 /* Tablet */
 @media screen and (max-width: 767px) {
+
+	h2 {
+		font-size: 1.2em;
+		margin: 1em 1.8em;
+	}
+
 	.burger-button {
 		display: block;
+		z-index: 4;
 	}
 
 	.header {
@@ -383,10 +400,33 @@ figure {
 
 	.header a {
 		justify-content: center;
+		height: 40px;
+		font-size: 2em;
+		text-decoration: underline;
+		margin-bottom: .5em;
 	}
 
 	.header .logo {
 		text-align: center;
+	}
+
+	.menu {
+		position: fixed;
+		background-color: rgba(255, 67, 1, 0.9);
+		z-index: 3;
+		top: 0;
+		left: -100vw; /* Estaba en 0, lo pusimos en -100vw para que se desplace y se oculte */
+		width: 100vw; /* 100% */
+		/* height: 100vh; /* 100% */ 
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: .3s; /* Animación */
+	}
+
+	.menu.is-active {
+		left: 0;
 	}
 
 	.project {
@@ -421,7 +461,7 @@ figure {
 		font-size: 1em;
 	}
 	.project__description {
-		font-size: 0.8em;
+		font-size: 1em;
 	}
 
 	.project__course, 
@@ -448,7 +488,7 @@ figure {
 	}
 	
 	.project__details {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.event__details {
@@ -477,6 +517,7 @@ figure {
 		text-align: center;
 		border: 1px solid transparent;
 	}
+
 }
 
 @media screen and (max-width: 320px) {
